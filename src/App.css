@@ -1,0 +1,125 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0a1124, #1a3671);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.input-container input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.copy-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #34d399;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #059669;
+}
+
+.range-container,
+.checkbox-container {
+  margin-bottom: 1.5rem;
+}
+
+.range-container label,
+.checkbox-container label {
+  font-size: 1.1rem;
+}
+
+.range-container input[type="range"] {
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+.range-container input[type="range"]::-webkit-slider-runnable-track {
+  background: #4ade80;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.range-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #10b981;
+  width: 20px;
+  margin-top: -7px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.range-container input[type="range"]:hover::-webkit-slider-thumb {
+  background: #3ba41b;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.checkbox-container label {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
